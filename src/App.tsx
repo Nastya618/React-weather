@@ -1,7 +1,14 @@
 import React from 'react'
-
-function App() {
-	return <div className='App'>Hello</div>
+import { Route, Routes } from 'react-router'
+import { Home } from './pages/Home/Home'
+import { MonthStatistics } from './pages/MonthStatistics/MonthStatistics'
+export default function App() {
+	return (
+		<div className='App'>
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/month-statistic' element={<MonthStatistics />} />
+			</Routes>
+		</div>
+	)
 }
-
-export default App
