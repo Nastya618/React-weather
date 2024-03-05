@@ -11,7 +11,7 @@
 	padding: 40px;
 	max-width: 750px;
 	width: 100%;
-	background: $lite-background;
+	background: var(#{--components-background-default});
 	border-radius: $border-radius;
 }
 
@@ -49,8 +49,11 @@
 		font-size: 25px;
 		font-weight: 500;
 		line-height: 30px;
-		color: #000000;
+		color: var(#{--text-color-default});
 		margin-bottom: 12px;
+	}
+	.day_time {
+		margin-bottom: 7px;
 	}
 	.img {
 		svg {
@@ -63,6 +66,6 @@
 	.day_time,
 	.day_city {
 		font-size: 15px;
-		color: $lite-color;
+		color: $base-color;
 	}
 }

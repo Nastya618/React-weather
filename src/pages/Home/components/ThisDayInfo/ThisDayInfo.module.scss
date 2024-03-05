@@ -5,8 +5,8 @@
 	padding: 40px;
 	max-width: 750px;
 	width: 100%;
-	background: $lite-background;
-	box-shadow: $box-shadow;
+	background: var(#{--components-background-default});
+	box-shadow: 2px 5px 25px -3px $box-shadow;
 	border-radius: $border-radius;
 }
 
@@ -16,6 +16,7 @@
 	gap: 20px;
 	align-items: center;
 	margin-bottom: 25px;
+	z-index: 1;
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -32,15 +33,19 @@
 	.indicator_name,
 	.indicator_value {
 		font-size: 14px;
-		color: $lite-color;
+		color: $base-color;
 	}
 	.indicator_value {
-		color: $base-color;
+		color: var(#{--text-color-default});
 	}
 }
 
 .cloud_img {
+	width: 460px;
+	height: 202px;
+	object-fit: contain;
 	position: absolute;
+	opacity: var(#{--cloud-image-opacity-default});
 	top: 0;
 	right: 0;
 }
