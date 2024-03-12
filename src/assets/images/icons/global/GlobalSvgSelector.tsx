@@ -243,8 +243,8 @@ export const GlobalSvgSelector = ({ id }: Props) => {
 							y2='19.072'
 							gradientUnits='userSpaceOnUse'
 						>
-							<stop stop-color='#FFB301' />
-							<stop offset='1' stop-color='#FFC533' />
+							<stop stopColor='#FFB301' />
+							<stop offset='1' stopColor='#FFC533' />
 						</linearGradient>
 						<linearGradient
 							id='ktm6hjbscb'
@@ -254,8 +254,8 @@ export const GlobalSvgSelector = ({ id }: Props) => {
 							y2='34'
 							gradientUnits='userSpaceOnUse'
 						>
-							<stop stop-color='#9FC7FF' />
-							<stop offset='1' stop-color='#9BC1F5' />
+							<stop stopColor='#9FC7FF' />
+							<stop offset='1' stopColor='#9BC1F5' />
 						</linearGradient>
 						<radialGradient
 							id='vywzzrt0kc'
@@ -265,8 +265,8 @@ export const GlobalSvgSelector = ({ id }: Props) => {
 							gradientUnits='userSpaceOnUse'
 							gradientTransform='matrix(0 -20.9574 6.69705 0 15.068 -22.697)'
 						>
-							<stop stop-color='#486DA8' stop-opacity='.4' />
-							<stop offset='1' stop-color='#486DA8' stop-opacity='0' />
+							<stop stopColor='#486DA8' stopOpacity='.4' />
+							<stop offset='1' stopColor='#486DA8' stopOpacity='0' />
 						</radialGradient>
 					</defs>
 				</svg>
@@ -302,8 +302,8 @@ export const GlobalSvgSelector = ({ id }: Props) => {
 							gradientUnits='userSpaceOnUse'
 							gradientTransform='matrix(0 -20.9574 6.69705 0 17.944 -22.697)'
 						>
-							<stop stop-color='#486DA8' stop-opacity='.4' />
-							<stop offset='1' stop-color='#486DA8' stop-opacity='0' />
+							<stop stopColor='#486DA8' stopOpacity='.4' />
+							<stop offset='1' stopColor='#486DA8' stopOpacity='0' />
 						</radialGradient>
 						<linearGradient
 							id='8wdygfd42a'
@@ -313,8 +313,8 @@ export const GlobalSvgSelector = ({ id }: Props) => {
 							y2='38'
 							gradientUnits='userSpaceOnUse'
 						>
-							<stop stop-color='#9FC7FF' />
-							<stop offset='1' stop-color='#9BC1F5' />
+							<stop stopColor='#9FC7FF' />
+							<stop offset='1' stopColor='#9BC1F5' />
 						</linearGradient>
 					</defs>
 				</svg>

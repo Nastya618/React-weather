@@ -43,6 +43,7 @@
 .cloud_img {
 	width: 460px;
 	height: 202px;
+	pointer-events: none;
 	object-fit: contain;
 	position: absolute;
 	opacity: var(#{--cloud-image-opacity-default});

@@ -4,9 +4,12 @@ import { ThisDayItem } from '../../pages/Home/components/ThisDayInfo/ThisDayItem
 import { Item } from '../../pages/Home/components/ThisDayInfo/ThisDayInfo'
 import { GlobalSvgSelector } from '../../assets/images/icons/global/GlobalSvgSelector'
 
-type Props = {}
+type Props = {
+	active: any
+	setActive: any
+}
 
-export const Popup = (prop: Props) => {
+export const Popup = ({ active, setActive }: Props) => {
 	const items = [
 		{
 			icon_id: 'temp',
@@ -31,8 +34,11 @@ export const Popup = (prop: Props) => {
 	]
 	return (
 		<>
-			<div className={s.blur}>
-				<div className={s.popup}>
+			<div
+				className={active ? s.blur + ' ' + s.active : s.blur}
+				onClick={() => setActive(false)}
+			>
+				<div className={s.popup} onClick={e => e.stopPropagation()}>
 					<div className={s.day}>
 						<div className={s.day_temp}>20°</div>
 						<div className={s.day_name}>Среда</div>
@@ -51,7 +57,7 @@ export const Popup = (prop: Props) => {
 							return <ThisDayItem key={item.icon_id} item={item} />
 						})}
 					</div>
-					<div className={s.close}>
+					<div className={s.close} onClick={() => setActive(false)}>
 						<GlobalSvgSelector id='close' />
 					</div>
 				</div>
