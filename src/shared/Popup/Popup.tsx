@@ -6,7 +6,7 @@ import { GlobalSvgSelector } from '../../assets/images/icons/global/GlobalSvgSel
 
 type Props = {}
 
-export const Popup = ({}: Props) => {
+export const Popup = (prop: Props) => {
 	const items = [
 		{
 			icon_id: 'temp',
